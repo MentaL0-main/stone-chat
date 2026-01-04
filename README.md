@@ -42,10 +42,10 @@ nc 127.0.0.1:5050
 ```
 
 # Статистика при тесте
-## Одновременные клиенты: 10k+
-## Throughput: 100k msg/sec
-## Latency: < 1ms
-## CPU Usage: Все ядра 100%
-## Memory: < 10MB (10k clients)
+### Одновременные клиенты: 10k+
+### Throughput: 100k msg/sec
+### Latency: < 1ms
+### CPU Usage: Все ядра 100%
+### Memory: < 10MB (10k clients)
 
-MIT License.
+# MIT License.
