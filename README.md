@@ -6,7 +6,7 @@
 ![Threads](https://img.shields.io/badge/Threads-Scalable-yellow.svg)
 ![Performance](https://img.shields.io/badge/Performance-10k%2B%20clients-red.svg)
 
-Многопользовательский консольный чат-сервер на **Boost.Asio** с поддержкой **C++20 coroutines**. Senior-level production код.
+Многопользовательский консольный чат-сервер на **Boost.Asio** с поддержкой **C++20 coroutines**.
 
 ## ✨ Особенности
 
