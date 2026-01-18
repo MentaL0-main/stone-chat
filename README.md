@@ -1,4 +1,4 @@
-# 🔥 Elite Chat Server v2.0
+# Stone Chat Server v2.0
 
 ![Production Ready](https://img.shields.io/badge/Production-Ready-brightgreen.svg)
 ![C++20](https://img.shields.io/badge/C%2B%2B-20-blue.svg)
@@ -8,19 +8,19 @@
 
 Многопользовательский консольный чат-сервер на **Boost.Asio** с поддержкой **C++20 coroutines**.
 
-## ✨ Особенности
+## Особенности
 
 | Функция | Статус |
 |---------|--------|
-| ✅ C++20 Coroutines (`co_await`, `co_return`) | **Production** |
-| ✅ Multi-threaded IO (все ядра CPU) | **Scalable** |
-| ✅ Thread-safe (shared_mutex) | **100% safe** |
-| ✅ Zero-copy broadcast | **High perf** |
-| ✅ Graceful shutdown (SIGINT) | **Production** |
-| ✅ UX Prompts (`type your name:`, `[username]>`) | **User friendly** |
-| ✅ Команды `/quit` | **Pro** |
+| C++20 Coroutines (`co_await`, `co_return`) | **Production** |
+| Multi-threaded IO (все ядра CPU) | **Scalable** |
+| Thread-safe (shared_mutex) | **100% safe** |
+| Zero-copy broadcast | **High perf** |
+| Graceful shutdown (SIGINT) | **Production** |
+| UX Prompts (`type your name:`, `[username]>`) | **User friendly** |
+| Команды `/quit` | **Pro** |
 
-## 🚀 Быстрый старт
+## Быстрый старт
 
 ```bash
 # Клонировать и собрать
