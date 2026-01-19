@@ -118,8 +118,8 @@ public:
         : acceptor_(ioc, tcp::endpoint(tcp::v4(), port)),
           sessions_mutex_(std::make_shared<std::shared_mutex>()),
           sessions_(std::make_shared<std::unordered_set<std::shared_ptr<ChatSession>>>()) {
-        std::cout << "🔥 Elite Chat Server v2.0 запущен на порту " << port << std::endl;
-        std::cout << "📡 Ожидание подключений...\n" << std::endl;
+        std::cout << "Elite Chat Server v2.0 запущен на порту " << port << std::endl;
+        std::cout << "Ожидание подключений...\n" << std::endl;
         do_accept();
     }
 
@@ -129,7 +129,7 @@ private:
             if (!ec) {
                 auto session = std::make_shared<ChatSession>(std::move(socket), sessions_mutex_, sessions_);
                 session->start();
-                std::cout << "🔗 Новое подключение #" << sessions_->size() << std::endl;
+                std::cout << "Новое подключение #" << sessions_->size() << std::endl;
             }
             do_accept();
         });
@@ -142,7 +142,7 @@ private:
 
 int main(int argc, char* argv[]) {
     if (argc != 2) {
-        std::cerr << "💻 Использование: " << argv[0] << " <port>\n";
+        std::cerr << "Использование: " << argv[0] << " <port>\n";
         return 1;
     }
 
@@ -152,7 +152,7 @@ int main(int argc, char* argv[]) {
         
         signal_set signals(ioc, SIGINT, SIGTERM);
         signals.async_wait([&ioc](auto, auto) {
-            std::cout << "\n🛑 Graceful shutdown..." << std::endl;
+            std::cout << "\nGraceful shutdown..." << std::endl;
             ioc.stop();
         });
 
@@ -166,7 +166,7 @@ int main(int argc, char* argv[]) {
             t.join();
         }
     } catch (std::exception& e) {
-        std::cerr << "💥 Ошибка: " << e.what() << std::endl;
+        std::cerr << "Ошибка: " << e.what() << std::endl;
         return 1;
     }
     return 0;
