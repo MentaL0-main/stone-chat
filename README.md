@@ -7,7 +7,7 @@
 ![Performance](https://img.shields.io/badge/Performance-10k%2B%20clients-red.svg)
 
 Multi-user console chat server on **Boost.Asio** with support for **C++20 coroutines**.
-
+-----------------------------------------
 ## Features
 
 | Function | Status |
@@ -19,7 +19,8 @@ Multi-user console chat server on **Boost.Asio** with support for **C++20 corout
 | Graceful shutdown (SIGINT) | **Production** |
 | UX Prompts («type your name:`, '[username]>`) | **User friendly** |
 | Commands `/quit` | **Pro** |
-
+--------------------------------------------------------------------------
+---------------------------------------------------------------
 ## Quick Start
 
 ```bash
@@ -30,19 +31,21 @@ mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 cmake --build .
 ```
-
+-----------------------------------------------------
 # Server start
 ```bash
 ./chat_server 5050
 Connect to the server, you can use netcat:
 nc 127.0.0.1:5050
 ```
-
+---------------------------------------------------------
 # Test statistic
+-----------------------------
 | Concurrent clients | 10k+|
 | Bandwidth | 100k msg/sec|
 | Latency | < 1ms|
 | CPU usage | All cores 100%|
 | Memory | < 10 MB (10k clients)|
+--------------------------------
 
 # MIT License.
