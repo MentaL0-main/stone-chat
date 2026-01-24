@@ -20,7 +20,7 @@ Multi-user console chat server on **Boost.Asio** with support for **C++20 corout
 | UX Prompts («type your name:`, '[username]>`) | **User friendly** |
 | Commands `/quit` | **Pro** |
 --------------------------------------------------------------------------
----------------------------------------------------------------
+
 ## Quick Start
 
 ```bash
@@ -40,6 +40,8 @@ nc 127.0.0.1:5050
 ```
 ---------------------------------------------------------
 # Test statistic
+
+| Value         | type |
 -----------------------------
 | Concurrent clients | 10k+|
 | Bandwidth | 100k msg/sec|
@@ -48,4 +50,4 @@ nc 127.0.0.1:5050
 | Memory | < 10 MB (10k clients)|
 --------------------------------
 
-# MIT License.
+**MIT License.**
