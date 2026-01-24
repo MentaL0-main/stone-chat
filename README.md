@@ -41,13 +41,13 @@ nc 127.0.0.1:5050
 ---------------------------------------------------------
 # Test statistic
 
-| Value         | type |
-------------|----------------
+| Value | type |
+|---------|----------|
 | Concurrent clients | 10k+|
 | Bandwidth | 100k msg/sec|
 | Latency | < 1ms|
 | CPU usage | All cores 100%|
 | Memory | < 10 MB (10k clients)|
---------------------------------
+--
 
 **MIT License.**
