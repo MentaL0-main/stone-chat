@@ -42,7 +42,7 @@ nc 127.0.0.1:5050
 # Test statistic
 
 | Value         | type |
------------------------------
+------------|----------------
 | Concurrent clients | 10k+|
 | Bandwidth | 100k msg/sec|
 | Latency | < 1ms|
