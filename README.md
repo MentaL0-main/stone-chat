@@ -48,6 +48,5 @@ nc 127.0.0.1:5050
 | Latency | < 1ms|
 | CPU usage | All cores 100%|
 | Memory | < 10 MB (10k clients)|
---
 
 **MIT License.**
