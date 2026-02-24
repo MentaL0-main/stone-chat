@@ -42,4 +42,5 @@ nc 127.0.0.1:5050
 | CPU usage | All cores 100%|
 | Memory | < 10 MB (10k clients)|
 
-**MIT License.**
+# License
+This project use **MIT License.**
