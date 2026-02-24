@@ -53,8 +53,8 @@ private:
                                 std::unique_lock lock(*self->sessions_mutex_);
                                 self->sessions_->insert(self->shared_from_this());
                             }
-                            std::cout << ">>> " << self->username_ << " подключился (" 
-                                      << self->sessions_->size() << " онлайн)" << std::endl;
+                            std::cout << ">>> " << self->username_ << " conntected (" 
+                                      << self->sessions_->size() << " online)" << std::endl;
                             self->broadcast(std::string(">>> ") + self->username_ + std::string(" joined the chat\n"));
                             self->send_prompt(std::string("[") + self->username_ + std::string("]> "));
                         } else if (line == "quit" || line == "/quit") {
@@ -71,8 +71,8 @@ private:
                     self->sessions_->erase(self->shared_from_this());
                 }
                 self->broadcast(std::string(">>> ") + self->username_ + std::string(" left the chat\n"));
-                std::cout << ">>> " << self->username_ << " отключился (" 
-                          << self->sessions_->size() << " онлайн)" << std::endl;
+                std::cout << ">>> " << self->username_ << " disconnected (" 
+                          << self->sessions_->size() << " online)" << std::endl;
                 co_return;
             }, detached);
     }
@@ -118,8 +118,8 @@ public:
         : acceptor_(ioc, tcp::endpoint(tcp::v4(), port)),
           sessions_mutex_(std::make_shared<std::shared_mutex>()),
           sessions_(std::make_shared<std::unordered_set<std::shared_ptr<ChatSession>>>()) {
-        std::cout << "Elite Chat Server v2.0 запущен на порту " << port << std::endl;
-        std::cout << "Ожидание подключений...\n" << std::endl;
+        std::cout << "Stone Chat Server started with port: " << port << std::endl;
+        std::cout << "Wait conntections...\n" << std::endl;
         do_accept();
     }
 
@@ -142,7 +142,7 @@ private:
 
 int main(int argc, char* argv[]) {
     if (argc != 2) {
-        std::cerr << "Использование: " << argv[0] << " <port>\n";
+        std::cerr << "Using: " << argv[0] << " <port>\n";
         return 1;
     }
 
@@ -166,7 +166,7 @@ int main(int argc, char* argv[]) {
             t.join();
         }
     } catch (std::exception& e) {
-        std::cerr << "Ошибка: " << e.what() << std::endl;
+        std::cerr << "Error: " << e.what() << std::endl;
         return 1;
     }
     return 0;
