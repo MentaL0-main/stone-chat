@@ -1,10 +1,4 @@
-# Stone Chat Server v2.0
-
-![Production Ready](https://img.shields.io/badge/Production-Ready-brightgreen.svg)
-![C++20](https://img.shields.io/badge/C%2B%2B-blue.svg)
-![Boost.Asio](https://img.shields.io/badge/Boost.Asio-latest-orange.svg)
-![Threads](https://img.shields.io/badge/Threads-Scalable-yellow.svg)
-![Performance](https://img.shields.io/badge/Performance-10k%2B%20clients-red.svg)
+# Stone Chat Server
 
 Multi-user console chat server on **Boost.Asio** with support for **C++20 coroutines**.
 -----------------------------------------
@@ -24,7 +18,6 @@ Multi-user console chat server on **Boost.Asio** with support for **C++20 corout
 ## Quick Start
 
 ```bash
-# Clone and assemble
 git clone https://github.com/MentaL0-main/stone-chat.git
 cd EliteChat
 mkdir build && cd build
